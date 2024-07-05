@@ -1,0 +1,78 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+    background-color: #ffffff;
+    font-family: "Pretendard", sans-serif;
+    height: 300vh;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.navbar {
+    background-color: #f8f9fa;
+}
+.navbar-title {
+    font-weight: 700;
+    color: #212529;
+}
+.nav-link {
+    color: #212529;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+}
+.dropdown-item {
+    color: #212529;
+    transition: background-color 0.3s;
+}
+.dropdown-item:hover {
+    background-color: #e9ecef;
+}
+.main-img {
+    border-radius: 10px;
+    width: 20rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: block;
+    transform: scale(0);
+    transform: rotate(-10deg);
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.main-subtitle {
+    color: #212529;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 0.3rem;
+    transform: rotate(-10deg);
+}
+.about-title {
+    color: #212529;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20rem;
+    padding-top: 10rem;
+    margin-bottom: 3rem;
+}
+.about-content {
+    color: #212529;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
