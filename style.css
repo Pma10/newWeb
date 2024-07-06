@@ -46,6 +46,8 @@ body {
     display: block;
     transform: scale(0);
     transform: rotate(-10deg);
+    opacity: 0;
+    transform: scale(0);
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -59,20 +61,55 @@ body {
     text-align: center;
     margin-top: 0.3rem;
     transform: rotate(-10deg);
+    opacity: 0;
+    transform: scale(0);
 }
-.about-title {
+.about-title, .skill-title {
     color: #212529;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 5rem;
     text-align: center;
     margin-top: 20rem;
     padding-top: 10rem;
     margin-bottom: 3rem;
 }
-.about-content {
+.about-content, .skill-content {
     color: #212529;
     font-weight: 500;
     font-size: 1rem;
     text-align: center;
     margin-top: 1rem;
+}
+.skill-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-li img{
+    width: 5rem;
+    margin-top: 1rem;
+    padding-right: 1rem;
+    opacity: 1;
+}
+#load {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.8;
+    background: white;
+    z-index: 99;
+    text-align: center;
+}
+
+#load > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
 }
