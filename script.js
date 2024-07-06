@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-
 window.addEventListener("DOMContentLoaded", function () {
     gsap.to(".main-img, .main-subtitle", {
         duration: 1,
@@ -31,27 +30,34 @@ window.addEventListener("DOMContentLoaded", function () {
     });
     gsap.from(".skill-content", {
         scrollTrigger: {
-            trigger: ".skills-content",
+            trigger: ".skill-content",
             start: "top bottom",
             end: "bottom top",
             toggleActions: "play none none none", 
             scrub: false
         },
-        x: 80,
+        y: 30,
         opacity: 1,
         duration: 1 
     });
-    gsap.from(".skill-li img", {
+    let tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".skill-li",
             start: "top bottom",
             end: "bottom top",
-            toggleActions: "play none none none", 
+            toggleActions: "play none none none",
             scrub: false
-        },
-        y : 100,
-        x : -100,
+        }
+    });
+    
+    tl.from(".skill-li img", {
+        y : -100,
         opacity: 0,
-        duration: 1 
+        duration: 2
+    })
+    .to(".skill-li img", {
+        scale: 2,
+        y: 20,
+        duration: 1
     });
 });
