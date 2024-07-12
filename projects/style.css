@@ -1,0 +1,44 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+    font-family: "Pretendard", sans-serif;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-img{
+    width: 20%;
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+.main-title{
+    font-weight: 700;
+    color: #212529;
+    font-size: 2rem;
+    text-align: center;
+}
+.main-title, .chez-invite{
+    opacity: 1;
+}
+.chez-invite{
+    background-color: #ffff;
+    border: 1px solid #77dd9e;
+    color: #77dd9e;
+    width: 7rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-out;
+}
+.chez-invite:hover{
+    background-color: #77dd9e;
+    color: #ffff;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}

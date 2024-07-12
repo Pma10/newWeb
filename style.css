@@ -72,6 +72,7 @@ body {
     margin-top: 20rem;
     padding-top: 10rem;
     margin-bottom: 3rem;
+    opacity: 1;
 }
 .about-content, .skill-content {
     color: #212529;

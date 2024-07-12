@@ -40,6 +40,31 @@ window.addEventListener("DOMContentLoaded", function () {
         opacity: 1,
         duration: 1 
     });
+    gsap.from(".about-title", {
+        scrollTrigger: {
+            trigger: ".about-title",
+            start: "top bottom",
+            end: "bottom top",
+            toggleActions: "play none none none", 
+            scrub: false
+        },
+        y: 80,
+        opacity: 0,
+        duration: 1 
+    });
+
+    gsap.from(".skill-title", {
+        scrollTrigger: {
+            trigger: ".skill-title",
+            start: "top bottom",
+            end: "bottom top",
+            toggleActions: "play none none none", 
+            scrub: false
+        },
+        y: 80,
+        opacity: 0,
+        duration: 1 
+    });
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: ".skill-li",
