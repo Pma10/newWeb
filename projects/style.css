@@ -7,11 +7,44 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
-
+.navbar {
+    background-color: #f8f9fa;
+}
+.navbar-title {
+    font-weight: 700;
+    color: #212529;
+}
+.nav-link {
+    color: #212529;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+.nav-link:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+.dropdown-menu {
+    background-color: #f8f9fa;
+    border: none;
+}
+.dropdown-item {
+    color: #212529;
+    transition: background-color 0.3s;
+}
+.dropdown-item:hover {
+    background-color: #e9ecef;
+}
 .main-img{
     width: 20%;
     border-radius: 10px;
     margin-top: 3rem;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .main-title{
     font-weight: 700;
