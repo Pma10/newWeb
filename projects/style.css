@@ -75,3 +75,16 @@ body {
     flex-direction: column;
     margin-top: 3rem;
 }
+
+@media (max-width: 768px) {
+    .main-img{
+        width: 50%;
+    }
+    .main-title{
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    .main-container{
+        margin-top: 1rem;
+    }
+}
