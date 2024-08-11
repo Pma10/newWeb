@@ -3,7 +3,7 @@
 body {
     background-color: #ffffff;
     font-family: "Pretendard", sans-serif;
-    height: 300vh;
+    height: 400vh;
     -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -64,7 +64,7 @@ body {
     opacity: 0;
     transform: scale(0);
 }
-.about-title, .skill-title {
+.about-title, .skill-title, .contact-title {
     color: #212529;
     font-weight: 700;
     font-size: 5rem;
@@ -74,14 +74,14 @@ body {
     margin-bottom: 3rem;
     opacity: 1;
 }
-.about-content, .skill-content {
+.about-content, .skill-content, .contact-content {
     color: #212529;
     font-weight: 500;
     font-size: 1rem;
     text-align: center;
     margin-top: 0.5rem;
 }
-.skill-ul {
+.skill-ul, .contact-ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -117,4 +117,18 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.discord-img{
+    border-radius: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.contact-li img{
+    transition: all 0.3s ease;
+}
+
+.contact-li img:hover{
+    transform: scale(1.2);
 }
